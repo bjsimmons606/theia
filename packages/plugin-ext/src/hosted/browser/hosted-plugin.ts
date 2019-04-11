@@ -157,7 +157,7 @@ export class HostedPluginSupport {
                 Object.keys(pluginsPerHost).forEach(hostKey => {
                     const plugins: PluginMetadata[] = pluginsPerHost[hostKey];
                     plugins.forEach(plugin => {
-                        console.log('++++++ **** ++++ ' + getPluginId(plugin.model));
+                        console.log('++++++ **** ++++ ' + hostKey + ' /// ' + getPluginId(plugin.model));
                     });
                     let pluginID = hostKey;
                     if (plugins.length >= 1) {
